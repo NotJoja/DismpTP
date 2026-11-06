@@ -7,8 +7,8 @@
   "advancement.dismp.cannonball.title": "Fat-ality",
   "advancement.dismp.clutch.description": "Wassereimer-MLG aus über 15 Blöcken, nachdem dich die Gleichgewichtsstörung von einer Kante geschubst hat",
   "advancement.dismp.clutch.title": "Clutch!",
-  "advancement.dismp.genocide.description": "Töte ein Baby-Zombie, während du Kleinwüchsigkeit hast",
-  "advancement.dismp.genocide.title": "Genozid!",
+  "advancement.dismp.homicide.description": "Töte ein Baby-Zombie, während du Kleinwüchsigkeit hast",
+  "advancement.dismp.homicide.title": "Homizid!",
   "advancement.dismp.getting_to_know_yourself.description": "Öffne zum ersten Mal das /dis Menü",
   "advancement.dismp.getting_to_know_yourself.title": "Sich selbst kennenlernen",
   "advancement.dismp.golden_downy.description": "Hab alle Disabilities gleichzeitig",
@@ -47,5 +47,6 @@
   "item.dismp.cure": "%s Heilmittel",
   "item.dismp.wheelchair": "Rollstuhl",
   "item.dismp.wheelchair.lore.1": "Rechtsklick auf den Boden zum Platzieren,",
-  "item.dismp.wheelchair.lore.2": "Rechtsklick darauf zum Hinsetzen."
+  "item.dismp.wheelchair.lore.2": "Rechtsklick darauf zum Hinsetzen.",
+  "item.dismp.bandage": "Bandage"
 }

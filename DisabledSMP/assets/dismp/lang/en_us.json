@@ -7,8 +7,8 @@
   "advancement.dismp.cannonball.title": "Fat-ality",
   "advancement.dismp.clutch.description": "Water bucket MLG from over 15 blocks after Balance Disorder pushed you off an edge",
   "advancement.dismp.clutch.title": "Clutch!",
-  "advancement.dismp.genocide.description": "Kill a baby zombie while having Dwarfism",
-  "advancement.dismp.genocide.title": "Genocide!",
+  "advancement.dismp.homicide.description": "Kill a baby zombie while having Dwarfism",
+  "advancement.dismp.homicide.title": "Homicide!",
   "advancement.dismp.getting_to_know_yourself.description": "Open the /dis menu for the first time",
   "advancement.dismp.getting_to_know_yourself.title": "Getting to know yourself",
   "advancement.dismp.golden_downy.description": "Have every disability at once",
@@ -47,5 +47,6 @@
   "item.dismp.cure": "%s Cure",
   "item.dismp.wheelchair": "Wheelchair",
   "item.dismp.wheelchair.lore.1": "Right-click on the ground to place it,",
-  "item.dismp.wheelchair.lore.2": "right-click it to sit down."
+  "item.dismp.wheelchair.lore.2": "right-click it to sit down.",
+  "item.dismp.bandage": "Bandage"
 }
