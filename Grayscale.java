@@ -5,13 +5,13 @@ import java.io.IOException;
 import java.nio.file.*;
 import java.util.stream.Stream;
 
-public class GrayscaleResourcePack {
+public class Grayscale {
 
     public static void main(String[] args) throws IOException {
 
         if (args.length < 2) {
             System.out.println(
-                "Usage: java GrayscaleResourcePack <input> <output>"
+                    "Usage: java Grayscale <input> <output>"
             );
             return;
         }
@@ -25,6 +25,7 @@ public class GrayscaleResourcePack {
         }
 
         int converted = 0;
+        int copied = 0;
 
         try (Stream<Path> files = Files.walk(input)) {
 
@@ -39,12 +40,9 @@ public class GrayscaleResourcePack {
 
                 Files.createDirectories(destination.getParent());
 
-                String path = relative.toString()
-                    .replace("\\", "/");
-
-                // Only convert PNG files inside Minecraft textures
-                if (path.startsWith("assets/minecraft/textures/")
-                        && path.toLowerCase().endsWith(".png")) {
+                // Convert EVERY PNG, regardless of its location
+                if (file.getFileName().toString()
+                        .toLowerCase().endsWith(".png")) {
 
                     BufferedImage image = ImageIO.read(file.toFile());
 
@@ -53,40 +51,43 @@ public class GrayscaleResourcePack {
                         BufferedImage gray = toGrayscale(image);
 
                         ImageIO.write(
-                            gray,
-                            "PNG",
-                            destination.toFile()
+                                gray,
+                                "PNG",
+                                destination.toFile()
                         );
 
                         converted++;
 
                         System.out.println(
-                            "Converted: " + relative
+                                "GRAYSCALE: " + relative
                         );
 
                     } else {
                         Files.copy(
-                            file,
-                            destination,
-                            StandardCopyOption.REPLACE_EXISTING
+                                file,
+                                destination,
+                                StandardCopyOption.REPLACE_EXISTING
                         );
+
+                        copied++;
                     }
 
                 } else {
 
-                    // Copy everything else unchanged
                     Files.copy(
-                        file,
-                        destination,
-                        StandardCopyOption.REPLACE_EXISTING
+                            file,
+                            destination,
+                            StandardCopyOption.REPLACE_EXISTING
                     );
+
+                    copied++;
                 }
             }
         }
 
-        System.out.println();
-        System.out.println("Finished!");
-        System.out.println("Converted textures: " + converted);
+        System.out.println("\nFinished!");
+        System.out.println("PNG files converted: " + converted);
+        System.out.println("Other files copied: " + copied);
         System.out.println("Output: " + output);
     }
 
@@ -97,9 +98,9 @@ public class GrayscaleResourcePack {
         int height = original.getHeight();
 
         BufferedImage gray = new BufferedImage(
-            width,
-            height,
-            BufferedImage.TYPE_INT_ARGB
+                width,
+                height,
+                BufferedImage.TYPE_INT_ARGB
         );
 
         for (int y = 0; y < height; y++) {
@@ -108,23 +109,22 @@ public class GrayscaleResourcePack {
 
                 int pixel = original.getRGB(x, y);
 
-                int alpha = (pixel >> 24) & 0xFF;
-                int red   = (pixel >> 16) & 0xFF;
-                int green = (pixel >> 8) & 0xFF;
+                int alpha = (pixel >>> 24) & 0xFF;
+                int red   = (pixel >>> 16) & 0xFF;
+                int green = (pixel >>> 8) & 0xFF;
                 int blue  = pixel & 0xFF;
 
-                // Perceptual grayscale / luminance
                 int luminance = (int) Math.round(
-                    0.2126 * red +
-                    0.7152 * green +
-                    0.0722 * blue
+                        0.2126 * red +
+                                0.7152 * green +
+                                0.0722 * blue
                 );
 
                 int newPixel =
-                    (alpha << 24) |
-                    (luminance << 16) |
-                    (luminance << 8) |
-                    luminance;
+                        (alpha << 24) |
+                                (luminance << 16) |
+                                (luminance << 8) |
+                                luminance;
 
                 gray.setRGB(x, y, newPixel);
             }
