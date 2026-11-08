@@ -52,5 +52,8 @@
   "item.dismp.wheelchair": "Rollstuhl",
   "item.dismp.wheelchair.lore.1": "Rechtsklick auf den Boden zum Platzieren,",
   "item.dismp.wheelchair.lore.2": "Rechtsklick darauf zum Hinsetzen.",
-  "item.dismp.bandage": "Bandage"
+  "item.dismp.bandage": "Bandage",
+  "item.dismp.nails": "Nägel",
+  "item.dismp.nails.lore.1": "Rechtsklick auf den Boden zum Platzieren.",
+  "item.dismp.nails.lore.2": "Tut jedem weh, der darauf tritt."
 }
