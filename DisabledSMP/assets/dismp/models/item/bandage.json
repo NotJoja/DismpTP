@@ -3,7 +3,7 @@
 	"credit": "Made by NicklesTicklesPickles (femboy)",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "bandage",
+		"0": "dismp:item/bandage",
 		"particle": "dismp:item/bandage"
 	},
 	"elements": [
