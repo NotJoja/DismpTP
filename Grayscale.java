@@ -10,9 +10,7 @@ public class Grayscale {
     public static void main(String[] args) throws IOException {
 
         if (args.length < 2) {
-            System.out.println(
-                    "Usage: java Grayscale <input> <output>"
-            );
+            System.out.println("Usage: java Grayscale <input> <output>");
             return;
         }
 
@@ -31,55 +29,39 @@ public class Grayscale {
 
             for (Path file : (Iterable<Path>) files::iterator) {
 
-                if (!Files.isRegularFile(file)) {
+                if (!Files.isRegularFile(file))
                     continue;
-                }
 
                 Path relative = input.relativize(file);
-                Path destination = output.resolve(relative);
+                Path destination;
 
-                Files.createDirectories(destination.getParent());
+                if (file.getFileName().toString().toLowerCase().endsWith(".png")) {
 
-                // Convert EVERY PNG, regardless of its location
-                if (file.getFileName().toString()
-                        .toLowerCase().endsWith(".png")) {
+                    String filename = file.getFileName().toString();
+
+                    destination = output
+                            .resolve(relative.getParent() == null
+                                    ? Paths.get("")
+                                    : relative.getParent())
+                            .resolve("gray_" + filename);
+
+                    Files.createDirectories(destination.getParent());
 
                     BufferedImage image = ImageIO.read(file.toFile());
 
                     if (image != null) {
-
                         BufferedImage gray = toGrayscale(image);
-
-                        ImageIO.write(
-                                gray,
-                                "PNG",
-                                destination.toFile()
-                        );
-
+                        ImageIO.write(gray, "PNG", destination.toFile());
                         converted++;
-
-                        System.out.println(
-                                "GRAYSCALE: " + relative
-                        );
-
+                        System.out.println("GRAYSCALE: " + destination);
                     } else {
-                        Files.copy(
-                                file,
-                                destination,
-                                StandardCopyOption.REPLACE_EXISTING
-                        );
-
                         copied++;
                     }
 
                 } else {
-
-                    Files.copy(
-                            file,
-                            destination,
-                            StandardCopyOption.REPLACE_EXISTING
-                    );
-
+                    destination = output.resolve(relative);
+                    Files.createDirectories(destination.getParent());
+                    Files.copy(file, destination, StandardCopyOption.REPLACE_EXISTING);
                     copied++;
                 }
             }
