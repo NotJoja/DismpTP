@@ -52,5 +52,8 @@
   "item.dismp.wheelchair": "Wheelchair",
   "item.dismp.wheelchair.lore.1": "Right-click on the ground to place it,",
   "item.dismp.wheelchair.lore.2": "right-click it to sit down.",
-  "item.dismp.bandage": "Bandage"
+  "item.dismp.bandage": "Bandage",
+  "item.dismp.nails": "Nails",
+  "item.dismp.nails.lore.1": "Right-click on the ground to place them.",
+  "item.dismp.nails.lore.2": "Hurts everyone who steps on them."
 }
