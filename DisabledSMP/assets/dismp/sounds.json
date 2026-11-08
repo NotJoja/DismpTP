@@ -1,0 +1,18 @@
+{
+  "vape": {
+    "sounds": [
+      {
+        "name": "dismp:vape",
+        "stream": false
+      }
+    ]
+  },
+  "zigaretten": {
+    "sounds": [
+      {
+        "name": "dismp:zigaretten",
+        "stream": false
+      }
+    ]
+  }
+}
