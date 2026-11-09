@@ -65,5 +65,7 @@
   "message.dismp.kill.fail.has_all": "%s already has all of your disabilities, so nothing was passed on.",
   "message.dismp.kill.fail.min": "You can't pass on a disability: the server minimum of %s would be undercut.",
   "message.dismp.kill.fail.max": "%s already has the maximum of %s disabilities.",
-  "message.dismp.kill.fail.victim": "No disability was passed on to you by %s."
+  "message.dismp.kill.fail.victim": "No disability was passed on to you by %s.",
+  "advancement.dismp.nails_wheelchair.title": "NAGELneuer Benzer",
+  "advancement.dismp.nails_wheelchair.description": "Break a wheelchair with nails you placed"
 }

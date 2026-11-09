@@ -65,5 +65,7 @@
   "message.dismp.kill.fail.has_all": "%s hat bereits alle deine Disabilities, deshalb wurde nichts weitergegeben.",
   "message.dismp.kill.fail.min": "Du kannst keine Disability weitergeben: Das Server-Minimum von %s würde unterschritten.",
   "message.dismp.kill.fail.max": "%s hat bereits das Maximum von %s Disabilities.",
-  "message.dismp.kill.fail.victim": "Es wurde keine Disability von %s an dich weitergegeben."
+  "message.dismp.kill.fail.victim": "Es wurde keine Disability von %s an dich weitergegeben.",
+  "advancement.dismp.nails_wheelchair.title": "NAGELneuer Benzer",
+  "advancement.dismp.nails_wheelchair.description": "Zerstöre einen Rollstuhl mit Nägeln, die du platziert hast"
 }
