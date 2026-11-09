@@ -15,3 +15,10 @@ changes only what a colorblind player could not tell apart:
   terracotta and glazed terracotta, stained glass and panes, candles, beds, shulker boxes, cushions and llama carpets.
 
 Everything else keeps its normal colors.
+
+### Classic mode
+
+`ColorblindClassic/` is the old version of the pack: everything is grayscale (textures plus a terrain shader override).
+Players with Color Blindness can switch to it in the game with `/dis menu` -> Color Blindness. Known limitation: the
+shader override only works in vanilla, so clients that replace the terrain rendering (Sodium) still show colored water.
+

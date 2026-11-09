@@ -1,0 +1,12 @@
+{
+  "pack": {
+    "pack_format": 16,
+    "description": "Resource Pack for the DisabledSMP that makes you color blind",
+    "supported_formats": {
+      "min_inclusive": 16,
+      "max_inclusive": 999
+	},
+    "min_format": [16, 0],
+    "max_format": [999, 0]
+  }
+}
