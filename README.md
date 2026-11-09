@@ -2,9 +2,16 @@ Texturepack for the DisabledSMP project!
 
 ## Colorblind pack
 
-Players with Color Blindness get the Colorblind pack on top. Besides grayscale textures it replaces the terrain
-shader (`assets/minecraft/shaders/core/terrain.fsh`), because biome tints such as water are applied by the game and not
-by the textures.
+Players with Color Blindness get the Colorblind pack on top of the main pack. It no longer turns everything gray, it
+changes only what a colorblind player could not tell apart:
 
-**Known limitation:** the shader override only works in vanilla. Clients that replace the terrain rendering, such as
-Sodium, ignore it, so water still shows its biome color there. Leaves are fixed through models and work everywhere.
+- **Ores** all look like coal ore (deepslate ores like deepslate coal ore). The nether ores are coal pieces on
+  netherrack. Fake ores from Schizophrenia look the same, as they use the same blocks.
+- **Tools and armor** look like their iron version: wooden, stone, golden, diamond, netherite and copper tools and
+  spears, and leather, chainmail, golden, diamond, netherite, copper (and turtle) armor, horse armor and nautilus armor.
+  Armor that is worn looks like iron armor too. This is done with item definitions (`items/`) and equipment
+  definitions (`equipment/`).
+- **Colored blocks** use grayscale textures: wool (also carpets, wool slabs and stairs), concrete and concrete powder,
+  terracotta and glazed terracotta, stained glass and panes, candles, beds, shulker boxes, cushions and llama carpets.
+
+Everything else keeps its normal colors.
