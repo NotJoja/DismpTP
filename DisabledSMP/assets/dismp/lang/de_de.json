@@ -58,5 +58,12 @@
   "item.dismp.bandage": "Bandage",
   "item.dismp.nails": "Nägel",
   "item.dismp.nails.lore.1": "Rechtsklick auf den Boden zum Platzieren.",
-  "item.dismp.nails.lore.2": "Tut jedem weh, der darauf tritt."
+  "item.dismp.nails.lore.2": "Tut jedem weh, der darauf tritt.",
+  "message.dismp.kill.passed_on": "Du hast %s verloren: Du hast es an %s weitergegeben.",
+  "message.dismp.kill.received": "Du hast %s von %s bekommen.",
+  "message.dismp.kill.fail.no_disabilities": "Du hast keine Disabilities zum Weitergeben.",
+  "message.dismp.kill.fail.has_all": "%s hat bereits alle deine Disabilities, deshalb wurde nichts weitergegeben.",
+  "message.dismp.kill.fail.min": "Du kannst keine Disability weitergeben: Das Server-Minimum von %s würde unterschritten.",
+  "message.dismp.kill.fail.max": "%s hat bereits das Maximum von %s Disabilities.",
+  "message.dismp.kill.fail.victim": "Es wurde keine Disability von %s an dich weitergegeben."
 }
