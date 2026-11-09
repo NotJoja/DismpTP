@@ -74,5 +74,9 @@
   "advancement.dismp.challenges.title": "Challenges",
   "advancement.dismp.challenges.description": "Show what you are capable of.",
   "advancement.dismp.disabilities.title": "Disabilities",
-  "advancement.dismp.disabilities.description": "Everything about your disabilities."
+  "advancement.dismp.disabilities.description": "Everything about your disabilities.",
+  "advancement.dismp.why.title": "Why?",
+  "advancement.dismp.why.description": "Dye something while you are colorblind",
+  "advancement.dismp.not_unarmed.title": "They weren't unarmed...",
+  "advancement.dismp.not_unarmed.description": "Get killed by someone with a paralyzed arm"
 }
