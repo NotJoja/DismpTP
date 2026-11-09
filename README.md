@@ -12,7 +12,7 @@ changes only what a colorblind player could not tell apart:
   Armor that is worn looks like iron armor too. This is done with item definitions (`items/`) and equipment
   definitions (`equipment/`).
 - **Colored blocks** use grayscale textures: wool (also carpets, wool slabs and stairs), concrete and concrete powder,
-  terracotta and glazed terracotta, stained glass and panes, candles, beds, shulker boxes, cushions and llama carpets.
+  terracotta (also the plain one) and glazed terracotta, stained glass and panes, candles, beds, shulker boxes, cushions and llama carpets.
 
 Everything else keeps its normal colors.
 
