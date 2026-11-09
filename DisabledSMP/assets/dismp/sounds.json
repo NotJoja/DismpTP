@@ -14,5 +14,13 @@
         "stream": false
       }
     ]
+  },
+  "wheelchair_break": {
+    "sounds": [
+      {
+        "name": "dismp:wheelchair_break",
+        "stream": false
+      }
+    ]
   }
 }
