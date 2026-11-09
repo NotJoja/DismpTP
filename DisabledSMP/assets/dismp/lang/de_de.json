@@ -67,5 +67,11 @@
   "message.dismp.kill.fail.max": "%s hat bereits das Maximum von %s Disabilities.",
   "message.dismp.kill.fail.victim": "Es wurde keine Disability von %s an dich weitergegeben.",
   "advancement.dismp.nails_wheelchair.title": "NAGELneuer Benzer",
-  "advancement.dismp.nails_wheelchair.description": "Zerstöre einen Rollstuhl mit Nägeln, die du platziert hast"
+  "advancement.dismp.nails_wheelchair.description": "Zerstöre einen Rollstuhl mit Nägeln, die du platziert hast",
+  "advancement.dismp.lifestyle.title": "Lebensstil",
+  "advancement.dismp.lifestyle.description": "Medizin, Rauchen und Rollstühle.",
+  "advancement.dismp.challenges.title": "Herausforderungen",
+  "advancement.dismp.challenges.description": "Zeig, was du draufhast.",
+  "advancement.dismp.disabilities.title": "Disabilities",
+  "advancement.dismp.disabilities.description": "Alles rund um deine Disabilities."
 }

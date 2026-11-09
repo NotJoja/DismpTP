@@ -67,5 +67,11 @@
   "message.dismp.kill.fail.max": "%s already has the maximum of %s disabilities.",
   "message.dismp.kill.fail.victim": "No disability was passed on to you by %s.",
   "advancement.dismp.nails_wheelchair.title": "NAGELneuer Benzer",
-  "advancement.dismp.nails_wheelchair.description": "Break a wheelchair with nails you placed"
+  "advancement.dismp.nails_wheelchair.description": "Break a wheelchair with nails you placed",
+  "advancement.dismp.lifestyle.title": "Lifestyle",
+  "advancement.dismp.lifestyle.description": "Medicine, smoking and wheelchairs.",
+  "advancement.dismp.challenges.title": "Challenges",
+  "advancement.dismp.challenges.description": "Show what you are capable of.",
+  "advancement.dismp.disabilities.title": "Disabilities",
+  "advancement.dismp.disabilities.description": "Everything about your disabilities."
 }
